@@ -258,11 +258,6 @@ Create a function (Note: a standalone function), `displayAllStudents`, that iter
 ```javascript
 for(keys in lexicon.students) {/*logic to print out students*/};
 ```
-
-[For loops - W3Schools](https://www.w3schools.com/js/js_loop_for.asp)
-
-[For..in loops - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
-
 Now create more functions: `displayAllSubjectsOfStudent(student)`, `displayAllStudentsEnlistedToSubject(subject)`, `displayAllTeachers`. Each function should have a return value.
 
 **Solution:**
