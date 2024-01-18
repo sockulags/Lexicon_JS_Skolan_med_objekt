@@ -231,11 +231,11 @@ Play around with these methods.
 
 **Solution:**
 ```js
- addSubjectToTeacher(math, niklas); 
-  bo.quitSubject(english);
-  niklas.removeTeacher(english);
-  tomas.relegateStudent(bo, math);
-  tomas.fireTeacher(math);
+addSubjectToTeacher(math, niklas); 
+bo.quitSubject(english);
+niklas.removeTeacher(english);
+tomas.relegateStudent(bo, math);
+tomas.fireTeacher(math);
 ```
 
 ### 10. Initialization Logic
