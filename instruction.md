@@ -18,7 +18,7 @@ let lexicon = {
 ```
 
 
-### 2. Creating Subject Objects
+### 2. Creating Subject Objects ✅
 
 Create three different subjects, where each subject is an object with a variable corresponding to the subject's name. Properties should include name, students (initialized as an empty array), and teacher (initialized as an empty object). For example:
 
@@ -44,7 +44,7 @@ let physicalEd = {
 }
 ```
 
-### 3. Creating Student Objects
+### 3. Creating Student Objects ✅
 
 Create five students, with the student's name as the variable. Properties should include name, age, gender, and subjects (initialized as an empty array).\
 **Solution:**
@@ -85,7 +85,7 @@ let linda = {
 }
 ```
 
-### 4. Creating Teacher Objects
+### 4. Creating Teacher Objects ✅
 
 Create two teachers with the name as the variable, and properties name and subjects (initialized as an empty array).\
 **Solution:**
@@ -100,9 +100,9 @@ let tomas={
 }
 ```
 
-## Connecting Subjects and Teachers
+## Connecting Subjects and Teachers 
 
-### 5. Connecting Subjects and Teachers
+### 5. Connecting Subjects and Teachers ✅
 
 Write a code line where you add a subject to a teacher's array of subjects using either push() or unshift(). Remember the difference between the two. Print both the teacher and the selected subject in the console and inspect them. Consider how this data could be useful from an admin's perspective in a school. Do you think it's complete, or is something missing?\
 **Solution:**
@@ -125,7 +125,7 @@ node app.js
 }
 ```
 
-### 6. Creating Connection Function
+### 6. Creating Connection Function ✅
 
 To address the issues in the previous tasks, you should establish a connection in both objects. In other words, start by adding a subject to a teacher's array of subjects, and then replace the empty teacher object in the subject with the actual teacher. This creates a reference on both sides. This situation is known as a circular reference, something typically avoided in programming, but for this exercise, it's acceptable.
 
@@ -153,7 +153,7 @@ $ node app.js
 }
 ```
 
-### 7. Object Methods
+### 7. Object Methods ✅
 
 Why have a standalone function to add a subject to a teacher? Why not just add a method (a function associated with a specific object) to the teacher's object? For example:
 
@@ -200,7 +200,7 @@ let lexicon = {
 };
 ```
 
-### 8. Additional Methods
+### 8. Additional Methods ✅
 
 Create more methods: `quitSubject`, `removeTeacher`, `relegateStudent`, `fireTeacher`. In which objects do these methods belong? If, for example, you fire a teacher, you need to remove the teacher's connection with the school and the subject(s) they teach. 
 
@@ -225,7 +225,7 @@ bo.quitSubject = function (subject) {
   
 ```
 
-### 9. Testing Methods
+### 9. Testing Methods ✅
 
 Play around with these methods. 
 
@@ -238,7 +238,7 @@ tomas.relegateStudent(bo, math);
 tomas.fireTeacher(math);
 ```
 
-### 10. Initialization Logic
+### 10. Initialization Logic ✅
 
 Now, let's build on that. To avoid having to call numerous methods in the console when restarting the program (which happens every time you edit the script file), you can create logic at the bottom of the script file (meaning the code is read last every time) to connect some students to the school, some subjects to the students, and some teachers to the subjects, and so on. Implement this logic now.
 
@@ -251,7 +251,7 @@ addSubjectToTeacher(english, tomas);
 addSubjectToTeacher(physicalEd, niklas);
 ```
 
-### 11. Display Functions
+### 11. Display Functions ✅
 
 Create a function (Note: a standalone function), `displayAllStudents`, that iterates through all the school's students using a for-loop. Note that a regular for..of loop won't work here (why?). You must use a for..in loop, which lets you iterate through an object's properties (also called keys) and thus access all the properties' values. Syntax:
 
@@ -300,7 +300,7 @@ function displayAllTeachers() {
   }
 ```
 
-### 12. Introducing Grades
+### 12. Introducing Grades ✅
 
 Expand the system by adding another type of object - objects related to grades. What properties should these have? What methods might be needed in these grade objects? How should the relationship between these objects be? What methods should exist in the other types of objects that deal with grades? Try to solve this and inspect and experiment with it in the console.
 
