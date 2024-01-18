@@ -249,7 +249,6 @@ lexicon.teachers = [niklas, tomas];
 addSubjectToTeacher(math, niklas);
 addSubjectToTeacher(english, tomas);
 addSubjectToTeacher(physicalEd, niklas);
-
 ```
 
 ### 11. Display Functions
